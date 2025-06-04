@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Yummy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-box">
+    <h2>Entrar na Yummy</h2>
+    <form onsubmit="return realizarLogin(event)">
+      <label for="email">E-mail</label>
+      <input type="email" id="email" required>
+
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" required>
+
+      <button type="submit">Entrar</button>
+
+      <div class="extra">
+        <p>Não tem uma conta? <a href="../cadastro/index.html">Criar conta</a></p>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function realizarLogin(event) {
+      event.preventDefault();
+
+      const email = document.getElementById("email").value.trim();
+      const senha = document.getElementById("senha").value;
+
+      if (!email || !senha) {
+        alert("Por favor, preencha todos os campos.");
+        return false;
+      }
+
+      alert("Login realizado com sucesso!");
+      // Redireciona para a Home
+      window.location.href = "../../index.html";
+      return true;
+    }
+  </script>
+</body>
+</html>
