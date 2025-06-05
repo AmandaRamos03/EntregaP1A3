@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marmita Saudável| Yummy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="logo.png" alt="Yummy Logo">
+      </div>
+      <div class="header-actions">
+        <a href="../../formularios/login/index.html" class="btn-login">Login</a>
+        <a href="../../formularios/cadastro/index.html" class="btn-cadastro">Cadastro</a>
+        <button class="btn-carrinho" onclick="abrirCarrinho()">
+          🛒 Carrinho <span id="contador-carrinho">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div id="carrinhoAba" class="carrinho-lateral">
+    <button id="fecharCarrinho" class="btn">X</button>
+    <h3>Seu Carrinho</h3>
+    <ul id="itensCarrinho"></ul>
+    <p class="entrega-msg">Taxa de entrega: R$ 5,00</p>
+    <p><strong>Total:</strong> R$ <span id="totalCarrinho">0.00</span></p>
+    <button class="btn-ir-pagamento" onclick="irParaPagamento()">
+      Próximo<img src="seta.png" alt="Seta" style="width: 18px; margin-left: 8px;">
+    </button>
+  </div>
+
+  <section class="restaurant-banner">
+  <div class="restaurant-logo">
+    <img src="logoMarmitaSaudavel.jpg" alt="Logo Pizzaria do Seu Zé">
+  </div>
+
+  <div class="restaurant-details">
+    <h1>Marmita Saudável</h1>
+    <p>Aberta até: 00:00</p>
+    <p>Mínimo do Pedido: R$ 15,00</p>
+    <p>Tempo de entrega: 20-35 min</p>
+  </div>
+</section>
+
+    <section class="menu">
+      <h2>Marmitas e Shakes</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="marmita-fit-low-carb.jpg" alt="Marmita Fit">
+          <h3>Marmita Fitness Frango Grelhados</h3>
+          <p>Frango grelhado temperado, arroz integral e mix de legumes no vapor.
+            Opção rica em proteínas, ideal para quem busca ganho de massa ou refeições leves e nutritivas</p>
+            <br>
+        <span class="preco">R$24,90</span>
+        <button onclick="adicionarAoCarrinho('Marmita Fitness Frango Grelhado', 24.90)" class="btn-carrinho">
+        <img src="cart.png" alt="Icone Carrinho" /> + 
+          </button>
+        </div>
+
+        <div class="menu-item">
+          <img src="marmita-fit-low-carb.jpg" alt="Marmita Fit">
+          <h3>Marmita Low Carb</h3>
+           <p>Tiras de carne ou frango acebolado, couve-flor refogada e abobrinha com brócolis no vapor.
+            Poucos carboidratos, perfeita para dietas low carb ou controle de peso.</p>
+            <br>
+        <span class="preco">R$24,90</span>
+        <button onclick="adicionarAoCarrinho('Marmita Low Carb', 24.90)" class="btn-carrinho">
+        <img src="cart.png" alt="Icone Carrinho" /> + 
+          </button>
+        </div>
+
+        <div class="menu-item">
+          <img src="marmita-fit-shake.png" alt="Marmita Fit">
+          <h3>Shake Proteico de Chocolate </h3>
+          <p>Feito com whey protein sabor chocolate, banana madura e pasta de amendoim natural.
+          Ideal para o pós-treino ou como refeição prática rica em proteínas e sabor.</p>
+          <br>
+        <span class="preco">R$15,90</span>
+        <button onclick="adicionarAoCarrinho('Shake Proteico de Chocolate', 15.90)" class="btn-carrinho">
+        <img src="cart.png" alt="Icone Carrinho" /> + 
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="informacoes">
+    <div class="footer-col">
+      <img src="logo.png" alt="Yummy Logo">
+      <p>Compre com segurança e rapidez no Yummy!</p>
+    </div>
+   <div class="footer-col">
+  <h4>Receba ofertas exclusivas</h4>
+  <input type="email" id="newsletterEmail" placeholder="Digite seu e-mail">
+  <button class="btn verde" onclick="inscreverNewsletter()">Inscrever</button>
+</div>
+    <div class="footer-col">
+      <h4>Páginas Legais</h4>
+      <ul>
+        <li><a href="#">Termos de Uso</a></li>
+        <li><a href="#">Política de Privacidade</a></li>
+        <li><a href="#">Sobre o Yummy</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Links Importantes</h4>
+      <ul>
+        <li><a href="#">Ajuda e Suporte</a></li>
+        <li><a href="#">Cadastro de Restaurantes</a></li>
+        <li><a href="#">Seja nosso parceiro</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="bottom-bar">
+    &copy; 2025 Yummy. Todos os direitos reservados.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
