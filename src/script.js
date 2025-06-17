@@ -85,16 +85,3 @@ function irParaPagamento() {
   localStorage.setItem("carrinho", JSON.stringify(carrinho)); // força salvar antes de sair
   window.location.href = "pagamento/index.html";
 }
-
-// Função para verificar email 
-function inscreverNewsletter() {
-    const email = document.getElementById('newsletterEmail').value.trim();
-    const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-
-    if (!emailValido) {
-      alert('Digite o seu e-mail');
-    } else {
-      alert('Inscrição enviada!');
-      document.getElementById('newsletterEmail').value = ''; // limpa o campo
-    }
-  }

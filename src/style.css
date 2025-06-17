@@ -24,19 +24,18 @@
   }
   
 .logo img {
-  width: 150px; /* Ajuste o tamanho da logo conforme necessário */
-  height: auto; /* Mantém a proporção */
+  width: 150px; 
+  height: auto; 
   
 }
-
   /* Header */
   header {
     background-color: #ffffff;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     padding: 2;
-    position: relative; /* Relativo para não interferir na logo */
-    z-index: 1; /* Garante que o header não sobreponha a logo */
-    margin-top: 0px; /* Aumente a distância para que o conteúdo não sobreponha a logo */
+    position: relative; 
+    z-index: 1; 
+    margin-top: 0px; 
   }
   
   header nav ul {
@@ -62,15 +61,9 @@
   }
   
   .btn.verde {
-    background-color: #4CAF50; 
-    color: white; 
-    padding: 10px 20px; /* Espaçamento interno do botão */
-    border: none; 
-    border-radius: 20px; 
-    cursor: pointer; /* Mostra um cursor de mão quando passa por cima */
-    font-size: 16px; /* Tamanho da fonte */
     background-color: #028643;
-    transition:  0.3s ease; /* Efeito de transição ao passar o mouse */
+    color: #fff;
+    font-weight: bold;
   }
   
   .btn.adicionar {
@@ -137,15 +130,15 @@
   border: 1px solid #eee;
   border-radius: 8px;
   position: relative;
-  flex: 1 1 300px; /* Faz os cards se adaptarem ao tamanho do container */
+  flex: 1 1 300px; 
 }
 
   
   .oferta img {
-  width: 100%; /* Garante que a imagem ocupe 100% da largura do card */
-  height: 250px; /* Define uma altura fixa para todas as imagens */
-  object-fit: cover; /* Faz com que a imagem ocupe o espaço sem deformar */
-  border-radius: 8px; /* Se você tiver bordas arredondadas nos cards */
+  width: 100%; 
+  height: 250px; 
+  object-fit: cover; 
+  border-radius: 8px; 
   transition: transform 0.6s ease;
 }
 
@@ -280,15 +273,11 @@
 }
 
 .card-img img {
-  
-  
-  
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-  
   .card-nome {
     position: absolute;
     bottom: 8px;
@@ -313,7 +302,7 @@
     font-weight: bold;
   }
   
-  /* Footer */
+  
   .footer {
     background-color: #f1f1f1;
     display: flex;
@@ -324,8 +313,8 @@
   }
 
   .footer img {
-  width: 250px; /* Ajusta o tamanho da logo no rodapé */
-  height: auto; /* Mantém a proporção */
+  width: 250px; 
+  height: auto; 
   
 }
   .footer-col {
@@ -411,5 +400,5 @@
   
   .card-nome a:hover {
     text-decoration: underline;
-    color: #028643; /* ou a cor verde do seu tema */
+    color: #028643; 
   }

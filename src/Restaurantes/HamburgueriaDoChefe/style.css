@@ -282,8 +282,7 @@ header .login-cadastro a {
     cursor: pointer; /* Mostra um cursor de mão quando passa por cima */
     font-size: 16px; /* Tamanho da fonte */
     background-color: #028643;
-    transition:  0.3s ease; /* Efeito de transição ao passar o mouse */
-  }
+    transition:  0.3s ease; /* Efeito de transição ao passar o mouse */}
 
     .carrinho-lateral {
     position: fixed;

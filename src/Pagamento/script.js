@@ -50,7 +50,7 @@ function enviarDadosEntrega() {
     nome,
     endereco,
     telefone
-  };c
+  };
 
   localStorage.setItem("dadosEntrega", JSON.stringify(dadosEntrega));
   alert("Dados enviados com sucesso!");
@@ -58,8 +58,8 @@ function enviarDadosEntrega() {
 
 function copiarCodigoPix() {
   const input = document.getElementById("codigoPix");
-  input.select(); // Seleciona o texto
-  input.setSelectionRange(0, 99999); // Para compatibilidade com mobile
+  input.select(); 
+  input.setSelectionRange(0, 99999); 
 
   try {
     document.execCommand("copy");
